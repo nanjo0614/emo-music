@@ -1,0 +1,39 @@
+device: cuda
+pretrained_optim_path: null
+pretrained_param_path: null
+inference_param_path:  null
+
+model:
+  d_word_embed: 512
+  pre_lnorm: True
+  decoder:
+    n_layer: 12
+    n_head: 8
+    d_model: 512
+    d_ff: 2048
+    dropout: 0.1
+    mem_len: 0
+    tgt_len: 2400
+
+data:
+  data_dir: events/stage1/pop1k7_events/full_song_chorder_{}/events
+  train_split: events/stage1/pop1k7_events/data_splits/train.pkl
+  val_split: events/stage1/pop1k7_events/data_splits/valid.pkl
+  vocab_path: events/stage1/pop1k7_events/full_song_chorder_{}/dictionary.pkl
+  batch_size: 2
+  max_n_seg: 1
+
+training:
+  trained_steps: 0
+  trained_epochs: 0
+  warmup_steps: 200
+  lr_decay_steps: 500000
+  max_lr: 1.0e-4
+  min_lr: 1.0e-5
+  max_epoch: 1000
+  val_interval: 1
+  log_interval: 50
+
+output:
+    ckpt_dir: ckpt/stage1/pop1k7_full_song_{}
+    ckpt_interval: 5

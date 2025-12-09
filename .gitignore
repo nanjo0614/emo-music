@@ -1,0 +1,65 @@
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+*.ipynb_checkpoints/
+
+# ===== Virtual env =====
+venv/
+ENV/
+*.env
+*.venv
+*.egg-info/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+
+# ===== Editor =====
+.vscode/
+.idea/
+
+# ===== Datasets & MIDI (再生成可能なもの) =====
+EMO_Harmonizer/midi_data/
+EMO_Harmonizer/generation/
+EMO-Disentanger/events/
+EMO-Disentanger/stage2_accompaniment/events/
+events/
+midi_data/
+dataset/
+data/
+emopia_events/
+POP909/
+
+# ===== Model checkpoints, weights, runs =====
+EMO_Harmonizer/emo_harmonizer_ckpt_functional/
+EMO-Disentanger/stage2_accompaniment/best_weight
+ckpt/
+**/ckpt/
+**/best_weight/
+**/checkpoints/
+**/output/
+**/runs/
+
+# ===== Large binary files =====
+soundfonts/
+*.sf2
+*.pt
+*.npy
+*.npz
+*.zip
+
+# ===== Audio & MIDI outputs =====
+*.mid
+*.wav
+*.mp3
+*.flac
+
+# ===== Nested / old repos =====
+emo-music-backup/

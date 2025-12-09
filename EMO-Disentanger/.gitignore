@@ -1,0 +1,26 @@
+# === dataset / checkpoints / generated stuff ===
+events/
+best_weight/
+generation/
+SalamanderGrandPiano-SF2-V3+20200602/
+__MACOSX/
+
+# archives
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+
+# audio / midi outputs
+*.wav
+*.mid
+
+# python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter / VSCode etc.
+*.ipynb_checkpoints/
